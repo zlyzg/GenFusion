@@ -1,0 +1,29 @@
+**/*.pyc
+**/.vscode
+**/build
+Reconstruction/data
+Reconstruction/data_sparse
+**/*.ply
+**/*.PKG-INFO
+# submodules
+**/__pycache__
+**/*.png
+**/*.out
+**/eval
+**/*.npz
+**/tmp
+**/*.mp4
+**/diffusion_ckpt
+**/*.ckpt
+**/checkpoints
+**/results
+**/backup
+
+# Output related directories and files
+**/output*
+**/nohup.out
+**/slurm
+
+# Ignore all log/logs directories (case-insensitive)
+[Ll][Oo][Gg][Ss]?/
+
