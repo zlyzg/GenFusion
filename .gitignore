@@ -8,6 +8,7 @@ Reconstruction/data_sparse
 # submodules
 **/__pycache__
 **/*.png
+!assets/**/*.png
 **/*.out
 **/eval
 **/*.npz
@@ -27,3 +28,4 @@ Reconstruction/data_sparse
 # Ignore all log/logs directories (case-insensitive)
 [Ll][Oo][Gg][Ss]?/
 
+**/.ruff_cache

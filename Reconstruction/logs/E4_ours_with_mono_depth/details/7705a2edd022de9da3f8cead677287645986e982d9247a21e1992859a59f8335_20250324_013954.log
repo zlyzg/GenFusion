@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "train.py", line 14, in <module>
+    import lpips
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/__init__.py", line 11, in <module>
+    from lpips.lpips import *
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/lpips.py", line 9, in <module>
+    from . import pretrained_networks as pn
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/pretrained_networks.py", line 3, in <module>
+    from torchvision import models as tv
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/__init__.py", line 6, in <module>
+    from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/models/__init__.py", line 2, in <module>
+    from .convnext import *
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/models/convnext.py", line 8, in <module>
+    from ..ops.misc import Conv2dNormActivation, Permute
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/ops/__init__.py", line 23, in <module>
+    from .poolers import MultiScaleRoIAlign
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/ops/poolers.py", line 10, in <module>
+    from .roi_align import roi_align
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/ops/roi_align.py", line 4, in <module>
+    import torch._dynamo
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_dynamo/__init__.py", line 2, in <module>
+    from . import allowed_functions, convert_frame, eval_frame, resume_execution
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_dynamo/allowed_functions.py", line 28, in <module>
+    from .utils import is_safe_constant, NP_SUPPORTED_MODULES
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 36, in <module>
+    import torch._numpy as tnp
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_numpy/__init__.py", line 3, in <module>
+    from ._funcs import *  # noqa: F403
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_numpy/_funcs.py", line 4, in <module>
+    from . import _funcs_impl, _reductions_impl
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 971, in get_code
+  File "<frozen importlib._bootstrap_external>", line 640, in _compile_bytecode
+KeyboardInterrupt

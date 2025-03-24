@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "train.py", line 24, in <module>
+    from utils.depth_loss_utils import ScaleAndShiftInvariantLoss
+  File "/home/anpei/A100_2/Sibo/Baseline/GenFusion/Reconstruction/utils/depth_loss_utils.py", line 5, in <module>
+    from torchmetrics.functional.regression import pearson_corrcoef
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchmetrics/__init__.py", line 31, in <module>
+    import scipy.signal
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/scipy/signal/__init__.py", line 325, in <module>
+    from ._ltisys import *
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/scipy/signal/_ltisys.py", line 28, in <module>
+    from scipy import integrate, interpolate, linalg
+  File "<frozen importlib._bootstrap>", line 1039, in _handle_fromlist
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/scipy/__init__.py", line 200, in __getattr__
+    return _importlib.import_module(f'scipy.{name}')
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/scipy/integrate/__init__.py", line 92, in <module>
+    from ._odepack_py import *
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 914, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1407, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1379, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1537, in find_spec
+KeyboardInterrupt

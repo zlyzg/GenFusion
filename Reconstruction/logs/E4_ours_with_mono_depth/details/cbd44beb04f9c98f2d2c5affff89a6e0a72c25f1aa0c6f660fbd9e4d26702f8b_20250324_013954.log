@@ -1,0 +1,77 @@
+Traceback (most recent call last):
+  File "train.py", line 14, in <module>
+    import lpips
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/__init__.py", line 11, in <module>
+    from lpips.lpips import *
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/lpips.py", line 9, in <module>
+    from . import pretrained_networks as pn
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/pretrained_networks.py", line 3, in <module>
+    from torchvision import models as tv
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/__init__.py", line 6, in <module>
+    from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/models/__init__.py", line 2, in <module>
+    from .convnext import *
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/models/convnext.py", line 8, in <module>
+    from ..ops.misc import Conv2dNormActivation, Permute
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/ops/__init__.py", line 1, in <module>
+    from ._register_onnx_ops import _register_custom_op
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/ops/_register_onnx_ops.py", line 5, in <module>
+    from torch.onnx import symbolic_opset11 as opset11
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/onnx/__init__.py", line 46, in <module>
+    from ._internal.exporter import (  # usort:skip. needs to be last to avoid circular import
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/onnx/_internal/exporter.py", line 42, in <module>
+    from torch.onnx._internal.fx import (
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/onnx/_internal/fx/__init__.py", line 1, in <module>
+    from .patcher import ONNXTorchPatcher
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/onnx/_internal/fx/patcher.py", line 11, in <module>
+    import transformers  # type: ignore[import]
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/transformers/__init__.py", line 26, in <module>
+    from . import dependency_versions_check
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/transformers/utils/__init__.py", line 21, in <module>
+    from huggingface_hub import get_full_repo_name  # for backward compatibility
+  File "<frozen importlib._bootstrap>", line 1039, in _handle_fromlist
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/huggingface_hub/__init__.py", line 547, in __getattr__
+    submod = importlib.import_module(submod_path)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/huggingface_hub/hf_api.py", line 52, in <module>
+    from ._commit_api import (
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/huggingface_hub/_commit_api.py", line 20, in <module>
+    from .file_download import hf_hub_url
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 23, in <module>
+    from ._local_folder import get_local_download_paths, read_download_metadata, write_download_metadata
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/huggingface_hub/_local_folder.py", line 60, in <module>
+    from .utils import WeakFileLock
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/huggingface_hub/utils/__init__.py", line 38, in <module>
+    from ._auth import get_stored_tokens, get_token
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/huggingface_hub/utils/_auth.py", line 25, in <module>
+    from ._runtime import is_colab_enterprise, is_google_colab
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/huggingface_hub/utils/_runtime.py", line 67, in <module>
+    _package_versions[candidate_name] = importlib.metadata.version(name)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/importlib/metadata.py", line 530, in version
+    return distribution(distribution_name).version
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/importlib/metadata.py", line 236, in version
+    return self.metadata['Version']
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/importlib/metadata.py", line 231, in metadata
+    return email.message_from_string(text)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/email/__init__.py", line 38, in message_from_string
+    return Parser(*args, **kws).parsestr(s)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/email/parser.py", line 67, in parsestr
+    return self.parse(StringIO(text), headersonly=headersonly)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/email/parser.py", line 56, in parse
+    feedparser.feed(data)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/email/feedparser.py", line 176, in feed
+    self._call_parse()
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/email/feedparser.py", line 180, in _call_parse
+    self._parse()
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/email/feedparser.py", line 305, in _parsegen
+    if self._cur.get_content_maintype() == 'multipart':
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/email/message.py", line 594, in get_content_maintype
+    ctype = self.get_content_type()
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/email/message.py", line 578, in get_content_type
+    value = self.get('content-type', missing)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/email/message.py", line 470, in get
+    if k.lower() == name:
+KeyboardInterrupt

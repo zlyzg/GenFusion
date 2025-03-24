@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "train.py", line 16, in <module>
+    from gaussian_renderer import render, network_gui
+  File "/home/anpei/A100_2/Sibo/Baseline/GenFusion/Reconstruction/gaussian_renderer/__init__.py", line 17, in <module>
+    from utils.point_utils import depth_to_normal
+  File "/home/anpei/A100_2/Sibo/Baseline/GenFusion/Reconstruction/utils/point_utils.py", line 6, in <module>
+    import matplotlib.pyplot as plt
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/matplotlib/pyplot.py", line 52, in <module>
+    import matplotlib.colorbar
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/matplotlib/colorbar.py", line 19, in <module>
+    from matplotlib import _api, cbook, collections, cm, colors, contour, ticker
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/matplotlib/collections.py", line 1666, in <module>
+    class CircleCollection(_CollectionWithSizes):
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/matplotlib/artist.py", line 150, in __init_subclass__
+    cls._update_set_signature_and_docstring()
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/matplotlib/artist.py", line 178, in _update_set_signature_and_docstring
+    + kwdoc(cls))
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/matplotlib/artist.py", line 1857, in kwdoc
+    ai = ArtistInspector(artist)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/matplotlib/artist.py", line 1444, in __init__
+    self.aliasd = self.get_aliases()
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/matplotlib/artist.py", line 1465, in get_aliases
+    propname = re.search("`({}.*)`".format(name[:4]),  # get_.*/set_.*
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/re.py", line 201, in search
+    return _compile(pattern, flags).search(string)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/re.py", line 294, in _compile
+    return _cache[type(pattern), pattern, flags]
+KeyboardInterrupt

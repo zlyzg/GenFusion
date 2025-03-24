@@ -1,0 +1,4 @@
+2025-03-24 06:10:06,598 - INFO - Starting batch processing with GPUs: [8]
+2025-03-24 06:10:06,599 - INFO - Starting training task on GPU 8 for bicycle
+2025-03-24 06:10:45,632 - ERROR - Task failed on GPU 8 for bicycle
+2025-03-24 06:10:45,640 - INFO - Starting training task on GPU 8 for bonsai

@@ -1,0 +1,2 @@
+2025-03-24 01:35:54,317 - INFO - Starting batch processing with GPUs: [0, 2, 3, 4, 5, 6, 7]
+2025-03-24 01:35:54,317 - INFO - No tasks to process - all results.json files exist

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/train.py", line 13, in <module>
+    import torch
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/torch/__init__.py", line 234, in <module>
+    _load_global_deps()
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/torch/__init__.py", line 174, in _load_global_deps
+    ctypes.CDLL(lib_path, mode=ctypes.RTLD_GLOBAL)
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/ctypes/__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

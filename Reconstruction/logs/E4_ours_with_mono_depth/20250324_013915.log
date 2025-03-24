@@ -1,0 +1,23 @@
+2025-03-24 01:39:15,997 - INFO - Starting batch processing with GPUs: [0, 2, 3, 4, 5, 6, 7]
+2025-03-24 01:39:16,005 - INFO - Found 24 hash directories to process
+2025-03-24 01:39:16,079 - INFO - Starting training task on GPU 0 for 06da796666297fe4c683c231edf56ec00148a6a52ab5bb159fe1be31f53a58df
+2025-03-24 01:39:17,102 - INFO - Starting training task on GPU 2 for 0a1b7c20a92c43c6b8954b1ac909fb2f0fa8b2997b80604bc8bbec80a1cb2da3
+2025-03-24 01:39:18,094 - INFO - Starting training task on GPU 3 for 14eb48a50e37df548894ab6d8cd628a21dae14bbe6c462e894616fc5962e6c49
+2025-03-24 01:39:19,106 - INFO - Starting training task on GPU 4 for 2cbfe28643b6636f9c70813cae7625aa858a352109493ac70fb429ce94dd55b3
+2025-03-24 01:39:20,145 - INFO - Starting training task on GPU 5 for 374ffd0c5ff8e544f588f1da3ce0d5b69dc39ff3af95d7ccec480fe5e533c45e
+2025-03-24 01:39:21,112 - INFO - Starting training task on GPU 6 for 389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee
+2025-03-24 01:39:22,092 - INFO - Starting training task on GPU 7 for 3bb3bb4d3e871d79eb71946cbab1e3afc7a8e33a661153033f32deb3e23d2e52
+2025-03-24 01:39:53,945 - ERROR - Task failed on GPU 5 for 374ffd0c5ff8e544f588f1da3ce0d5b69dc39ff3af95d7ccec480fe5e533c45e
+2025-03-24 01:39:53,951 - INFO - Starting training task on GPU 5 for 91afb9910b042f7185c2b8e4b6b24b5785dae4542617b3f8005b5492f6d123f7
+2025-03-24 01:39:54,023 - ERROR - Task failed on GPU 4 for 2cbfe28643b6636f9c70813cae7625aa858a352109493ac70fb429ce94dd55b3
+2025-03-24 01:39:54,026 - INFO - Starting training task on GPU 4 for 7705a2edd022de9da3f8cead677287645986e982d9247a21e1992859a59f8335
+2025-03-24 01:39:54,069 - ERROR - Task failed on GPU 6 for 389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee
+2025-03-24 01:39:54,073 - INFO - Starting training task on GPU 6 for a726c1112ad026efc92f59f196c0698e67abd12a04135a7ff6349b1d31b089eb
+2025-03-24 01:39:54,147 - ERROR - Task failed on GPU 7 for 3bb3bb4d3e871d79eb71946cbab1e3afc7a8e33a661153033f32deb3e23d2e52
+2025-03-24 01:39:54,150 - INFO - Starting training task on GPU 7 for cbd44beb04f9c98f2d2c5affff89a6e0a72c25f1aa0c6f660fbd9e4d26702f8b
+2025-03-24 01:39:54,222 - ERROR - Task failed on GPU 3 for 14eb48a50e37df548894ab6d8cd628a21dae14bbe6c462e894616fc5962e6c49
+2025-03-24 01:39:54,225 - INFO - Starting training task on GPU 3 for 71b2dc8a2aa553da09b8b94b9f0d5e8abcca307def74d26301616ee238464d46
+2025-03-24 01:39:54,264 - ERROR - Task failed on GPU 0 for 06da796666297fe4c683c231edf56ec00148a6a52ab5bb159fe1be31f53a58df
+2025-03-24 01:39:54,287 - INFO - Starting training task on GPU 0 for 5c3af581028068a3c402c7cbe16ecf9471ddf2897c34ab634b7b1b6cf81aba00
+2025-03-24 01:39:54,306 - ERROR - Task failed on GPU 2 for 0a1b7c20a92c43c6b8954b1ac909fb2f0fa8b2997b80604bc8bbec80a1cb2da3
+2025-03-24 01:39:54,337 - INFO - Starting training task on GPU 2 for 66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1

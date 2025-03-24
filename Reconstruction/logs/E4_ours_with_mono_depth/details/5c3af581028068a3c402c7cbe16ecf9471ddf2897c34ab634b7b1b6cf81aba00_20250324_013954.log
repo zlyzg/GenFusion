@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "train.py", line 14, in <module>
+    import lpips
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/__init__.py", line 11, in <module>
+    from lpips.lpips import *
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/lpips.py", line 9, in <module>
+    from . import pretrained_networks as pn
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/pretrained_networks.py", line 3, in <module>
+    from torchvision import models as tv
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/__init__.py", line 6, in <module>
+    from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/datasets/__init__.py", line 1, in <module>
+    from ._optical_flow import FlyingChairs, FlyingThings3D, HD1K, KittiFlow, Sintel
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/datasets/_optical_flow.py", line 12, in <module>
+    from ..io.image import _read_png_16
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/io/__init__.py", line 36, in <module>
+    from .video import read_video, read_video_timestamps, write_video
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/io/video.py", line 16, in <module>
+    import av
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/av/__init__.py", line 20, in <module>
+    from av._core import time_base, library_versions
+  File "<frozen importlib._bootstrap>", line 389, in parent
+KeyboardInterrupt

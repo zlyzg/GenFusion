@@ -1,0 +1,44 @@
+Optimizing ././output/E4_ours_with_mono_depth_15/06da796666297fe4c683c231edf56ec00148a6a52ab5bb159fe1be31f53a58df
+Output folder: ././output/E4_ours_with_mono_depth_15/06da796666297fe4c683c231edf56ec00148a6a52ab5bb159fe1be31f53a58df [24/03 01:39:21]
+Namespace(add_indices=[7, 15], batch_size=1, camera_path_file=None, checkpoint_iterations=[], compute_cov3D_python=False, convert_SHs_python=False, data_device='cuda', data_dir='./data/06da796666297fe4c683c231edf56ec00148a6a52ab5bb159fe1be31f53a58df/nerfstudio', data_factor=4, dataset=<arguments.GroupParams object at 0x7fa25eb00a30>, debug=False, densification_interval=100, densify_from_iter=1000, densify_grad_threshold=0.0002, densify_until_iter=15000, depth_loss=True, depth_ratio=0.0, detect_anomaly=False, diffusion_ckpt='./diffusion_ckpt/epoch=59-step=34000.ckpt', diffusion_config='./generation_infer.yaml', diffusion_crop_height=512, diffusion_crop_width=960, diffusion_every=1000, diffusion_resize_height=512, diffusion_resize_width=960, diffusion_until=7000, distance=1.8, downsample_factor=2, eval=True, feature_lr=0.0025, global_scale=1.0, images='../images_4', init_extent=3.0, init_num_pts=100000, init_type='sfm', initize_points=False, ip='127.0.0.1', iterations=7000, lambda_dist=0.0, lambda_dssim=0.8, lambda_normal=0.05, lambda_reg=0.5, model=<arguments.GroupParams object at 0x7fa25eb00af0>, model_path='././output/E4_ours_with_mono_depth_15/06da796666297fe4c683c231edf56ec00148a6a52ab5bb159fe1be31f53a58df', mono_depth=False, num_frames=16, opacity_cull=0.05, opacity_lr=0.05, opacity_reset_interval=9000, opt=<arguments.GroupParams object at 0x7fa25eb00b80>, outpaint_type='crop', patch_size=['480', '270'], path_scale=0.7, percent_dense=0.01, pipe=<arguments.GroupParams object at 0x7fa25eb00bb0>, port=4050, position_lr_delay_mult=0.01, position_lr_final=1.6e-06, position_lr_init=0.00016, position_lr_max_steps=30000, position_z_offset=0.0, quiet=False, render_items=['RGB', 'Alpha', 'Normal', 'Depth', 'Edge', 'Curvature'], repair=True, resolution=-1, rotation_angle=16.0, rotation_lr=0.001, save_iterations=[7000, 30000, 7000], scaling_lr=0.005, sh_degree=3, sparse_view=0, start_checkpoint=None, start_diffusion_iter=3000, start_dist_iter=5000, test_every=8, test_iterations=[7000], unconditional_guidance_scale=3.2, white_background=False, wo_crop=False) [24/03 01:39:21]
+Traceback (most recent call last):
+  File "train.py", line 425, in <module>
+    train_manager = TrainManager(args)
+  File "train.py", line 49, in __init__
+    self.extrapolator = Extrapolator(self.args)
+  File "/home/anpei/A100_2/Sibo/Baseline/GenFusion/Reconstruction/extrapolation/extrapolator.py", line 32, in __init__
+    self.model = self.create_model()
+  File "/home/anpei/A100_2/Sibo/Baseline/GenFusion/Reconstruction/extrapolation/extrapolator.py", line 41, in create_model
+    model = instantiate_from_config(model_config)
+  File "/home/anpei/A100_2/Sibo/Baseline/GenFusion/Reconstruction/extrapolation/extrapolator.py", line 19, in instantiate_from_config
+    return get_obj_from_str(config["target"])(**config.get("params", dict()))
+  File "/home/anpei/A100_2/Sibo/Baseline/GenFusion/Reconstruction/../Generation/lvdm/models/ddpm3d.py", line 1058, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/anpei/A100_2/Sibo/Baseline/GenFusion/Reconstruction/../Generation/lvdm/models/ddpm3d.py", line 537, in __init__
+    self.instantiate_cond_stage(cond_stage_config)
+  File "/home/anpei/A100_2/Sibo/Baseline/GenFusion/Reconstruction/../Generation/lvdm/models/ddpm3d.py", line 604, in instantiate_cond_stage
+    model = instantiate_from_config(config)
+  File "/home/anpei/A100_2/Sibo/Baseline/GenFusion/Reconstruction/../Generation/utils/utils.py", line 34, in instantiate_from_config
+    return get_obj_from_str(config["target"])(**config.get("params", dict()))
+  File "/home/anpei/A100_2/Sibo/Baseline/GenFusion/Reconstruction/../Generation/lvdm/modules/encoders/condition.py", line 188, in __init__
+    model, _, _ = open_clip.create_model_and_transforms(arch, device=torch.device('cpu'), pretrained=version)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/open_clip/factory.py", line 292, in create_model_and_transforms
+    model = create_model(
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/open_clip/factory.py", line 207, in create_model
+    load_checkpoint(model, checkpoint_path)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/open_clip/factory.py", line 103, in load_checkpoint
+    incompatible_keys = model.load_state_dict(state_dict, strict=strict)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2138, in load_state_dict
+    load(self, state_dict)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2126, in load
+    load(child, child_state_dict, child_prefix)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2126, in load
+    load(child, child_state_dict, child_prefix)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2126, in load
+    load(child, child_state_dict, child_prefix)
+  [Previous line repeated 3 more times]
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2120, in load
+    module._load_from_state_dict(
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2040, in _load_from_state_dict
+    param.copy_(input_param)
+KeyboardInterrupt

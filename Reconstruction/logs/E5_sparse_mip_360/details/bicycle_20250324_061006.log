@@ -1,0 +1,51 @@
+Optimizing ././output/E5_sparse_mip_360_5/bicycle
+Output folder: ././output/E5_sparse_mip_360_5/bicycle [24/03 06:10:22]
+Namespace(data_dir='./data_sparse/bicycle', data_factor=4, test_every=8, global_scale=1.0, patch_size=[], depth_loss=True, sparse_view=6, batch_size=1, init_type='sfm', init_num_pts=100000, init_extent=3.0, sh_degree=3, model_path='././output/E5_sparse_mip_360_5/bicycle', images='../images_4', resolution=-1, white_background=False, data_device='cuda', eval=True, render_items=['RGB', 'Alpha', 'Normal', 'Depth', 'Edge', 'Curvature'], iterations=7000, position_lr_init=0.00016, position_lr_final=1.6e-06, position_lr_delay_mult=0.01, position_lr_max_steps=30000, feature_lr=0.0025, opacity_lr=0.05, scaling_lr=0.005, rotation_lr=0.001, percent_dense=0.01, lambda_dssim=0.5, lambda_dist=10.0, lambda_normal=0.05, opacity_cull=0.05, densification_interval=500, opacity_reset_interval=3100, densify_from_iter=100, densify_until_iter=5000, densify_grad_threshold=0.0002, convert_SHs_python=False, compute_cov3D_python=False, depth_ratio=0.0, debug=False, ip='127.0.0.1', port=4508, detect_anomaly=False, test_iterations=[7000], save_iterations=[7000, 30000, 7000], quiet=False, checkpoint_iterations=[], start_checkpoint=None, repair=True, mono_depth=True, diffusion_ckpt='./diffusion_ckpt/epoch=59-step=34000.ckpt', diffusion_config='./generation_infer.yaml', num_frames=16, diffusion_resize_width=960, diffusion_resize_height=512, diffusion_crop_width=960, diffusion_crop_height=512, start_diffusion_iter=1000, diffusion_every=1000, diffusion_until=7000, outpaint_type='sparse', add_indices=[], initize_points=False, downsample_factor=1, wo_crop=False, distance=1.8, position_z_offset=0.0, rotation_angle=16.0, path_scale=0.7, camera_path_file=None, unconditional_guidance_scale=3.2, lambda_reg=1.0, start_dist_iter=5000, dataset=<arguments.GroupParams object at 0x7fd8e74d0950>, model=<arguments.GroupParams object at 0x7fd8e74d0c90>, opt=<arguments.GroupParams object at 0x7fd8e74d0dd0>, pipe=<arguments.GroupParams object at 0x7fd8e74d0d10>) [24/03 06:10:22]
+Traceback (most recent call last):
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/train.py", line 633, in <module>
+    train_manager = TrainManager(args)
+                    ^^^^^^^^^^^^^^^^^^
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/train.py", line 53, in __init__
+    self.extrapolator = Extrapolator(self.args)
+                        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/extrapolation/extrapolator.py", line 35, in __init__
+    self.model = self.create_model()
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/extrapolation/extrapolator.py", line 43, in create_model
+    model = instantiate_from_config(model_config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/extrapolation/extrapolator.py", line 21, in instantiate_from_config
+    return get_obj_from_str(config["target"])(**config.get("params", dict()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/../Generation/lvdm/models/ddpm3d.py", line 1341, in __init__
+    super().__init__(*args, **kwargs)
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/../Generation/lvdm/models/ddpm3d.py", line 617, in __init__
+    super().__init__(conditioning_key=conditioning_key, *args, **kwargs)
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/../Generation/lvdm/models/ddpm3d.py", line 92, in __init__
+    self.model = DiffusionWrapper(unet_config, conditioning_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/../Generation/lvdm/models/ddpm3d.py", line 1613, in __init__
+    self.diffusion_model = instantiate_from_config(diff_model_config)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/../Generation/utils/utils.py", line 34, in instantiate_from_config
+    return get_obj_from_str(config["target"])(**config.get("params", dict()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/../Generation/lvdm/modules/networks/openaimodel3d.py", line 661, in __init__
+    else Upsample(ch, conv_resample, dims=dims, out_channels=out_ch)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/../Generation/lvdm/modules/networks/openaimodel3d.py", line 96, in __init__
+    self.conv = conv_nd(
+                ^^^^^^^^
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/../Generation/lvdm/basics.py", line 45, in conv_nd
+    return nn.Conv2d(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 447, in __init__
+    super().__init__(
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 141, in __init__
+    self.reset_parameters()
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 147, in reset_parameters
+    init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/torch/nn/init.py", line 419, in kaiming_uniform_
+    return tensor.uniform_(-bound, bound)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

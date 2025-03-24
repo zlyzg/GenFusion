@@ -1,0 +1,50 @@
+Traceback (most recent call last):
+  File "train.py", line 14, in <module>
+    import lpips
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/__init__.py", line 11, in <module>
+    from lpips.lpips import *
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/lpips.py", line 9, in <module>
+    from . import pretrained_networks as pn
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/pretrained_networks.py", line 3, in <module>
+    from torchvision import models as tv
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/__init__.py", line 6, in <module>
+    from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/models/__init__.py", line 2, in <module>
+    from .convnext import *
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/models/convnext.py", line 8, in <module>
+    from ..ops.misc import Conv2dNormActivation, Permute
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/ops/__init__.py", line 23, in <module>
+    from .poolers import MultiScaleRoIAlign
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/ops/poolers.py", line 10, in <module>
+    from .roi_align import roi_align
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/ops/roi_align.py", line 4, in <module>
+    import torch._dynamo
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_dynamo/__init__.py", line 5, in <module>
+    from .decorators import (
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_dynamo/decorators.py", line 142, in <module>
+    def graph_break():
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_dynamo/decorators.py", line 110, in inner
+    allowed_functions._allowed_function_ids.remove(id(fn))
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_dynamo/allowed_functions.py", line 83, in remove
+    if idx in self():
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_dynamo/allowed_functions.py", line 65, in __call__
+    value = lazy_initializer()
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_dynamo/allowed_functions.py", line 228, in _allowed_function_ids
+    _find_torch_objects(torch)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_dynamo/allowed_functions.py", line 222, in _find_torch_objects
+    _find_torch_objects(obj)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_dynamo/allowed_functions.py", line 222, in _find_torch_objects
+    _find_torch_objects(obj)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_dynamo/allowed_functions.py", line 225, in _find_torch_objects
+    elif inspect.getmodule(obj) is None and not is_safe_constant(obj):
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/inspect.py", line 737, in getmodule
+    file = getabsfile(object, _filename)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/inspect.py", line 720, in getabsfile
+    _filename = getsourcefile(object) or getfile(object)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/inspect.py", line 696, in getsourcefile
+    filename = getfile(object)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/package/package_importer.py", line 696, in _patched_getfile
+    return _orig_getfile(object)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/inspect.py", line 656, in getfile
+    if ismodule(object):
+KeyboardInterrupt

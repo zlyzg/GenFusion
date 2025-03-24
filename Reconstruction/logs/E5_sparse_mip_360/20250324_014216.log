@@ -1,0 +1,8 @@
+2025-03-24 01:42:16,968 - INFO - Starting batch processing with GPUs: [0, 2, 3, 4, 5, 6, 7]
+2025-03-24 01:42:16,976 - INFO - Starting training task on GPU 0 for bicycle
+2025-03-24 01:42:17,980 - INFO - Starting training task on GPU 2 for bonsai
+2025-03-24 01:42:18,981 - INFO - Starting training task on GPU 3 for counter
+2025-03-24 01:42:19,983 - INFO - Starting training task on GPU 4 for garden
+2025-03-24 01:42:21,050 - ERROR - Task failed on GPU 4 for garden
+2025-03-24 01:42:21,250 - ERROR - Task failed on GPU 3 for counter
+2025-03-24 01:42:21,344 - ERROR - Task failed on GPU 2 for bonsai

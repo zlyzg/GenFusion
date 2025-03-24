@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/train.py", line 16, in <module>
+    from gaussian_renderer import render, network_gui
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/gaussian_renderer/__init__.py", line 17, in <module>
+    from utils.point_utils import depth_to_normal
+  File "/mnt/anpei/Sibo/Baseline/GenFusion/Reconstruction/utils/point_utils.py", line 6, in <module>
+    import matplotlib.pyplot as plt
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/matplotlib/pyplot.py", line 52, in <module>
+    import matplotlib.colorbar
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/matplotlib/colorbar.py", line 19, in <module>
+    from matplotlib import _api, cbook, collections, cm, colors, contour, ticker
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/matplotlib/contour.py", line 13, in <module>
+    from matplotlib.backend_bases import MouseButton
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/matplotlib/backend_bases.py", line 45, in <module>
+    from matplotlib import (
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/matplotlib/text.py", line 17, in <module>
+    from .patches import FancyArrowPatch, FancyBboxPatch, Rectangle
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/matplotlib/patches.py", line 665, in <module>
+    class Rectangle(Patch):
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/matplotlib/artist.py", line 150, in __init_subclass__
+    cls._update_set_signature_and_docstring()
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/matplotlib/artist.py", line 171, in _update_set_signature_and_docstring
+    for prop in ArtistInspector(cls).get_setters()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/miniconda3/envs/GenFusion/lib/python3.11/site-packages/matplotlib/artist.py", line 1529, in get_setters
+    for name in dir(self.o):
+                ^^^^^^^^^^^
+KeyboardInterrupt

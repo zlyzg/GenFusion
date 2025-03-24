@@ -1,0 +1,11 @@
+Optimizing ././output/E5_sparse_mip_360_4/bicycle
+Traceback (most recent call last):
+  File "train.py", line 419, in <module>
+    safe_state(args.quiet)
+  File "/home/anpei/A100_2/Sibo/Baseline/GenFusion/Reconstruction/utils/general_utils.py", line 133, in safe_state
+    torch.cuda.set_device(torch.device("cuda:0"))
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/cuda/__init__.py", line 404, in set_device
+    torch._C._cuda_setDevice(device)
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+KeyboardInterrupt

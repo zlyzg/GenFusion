@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/transformers/__init__.py", line 3839, in <module>
+    raise OptionalDependencyNotAvailable()
+transformers.utils.import_utils.OptionalDependencyNotAvailable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train.py", line 14, in <module>
+    import lpips
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/__init__.py", line 11, in <module>
+    from lpips.lpips import *
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/lpips.py", line 9, in <module>
+    from . import pretrained_networks as pn
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/lpips/pretrained_networks.py", line 3, in <module>
+    from torchvision import models as tv
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/__init__.py", line 6, in <module>
+    from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/models/__init__.py", line 2, in <module>
+    from .convnext import *
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/models/convnext.py", line 8, in <module>
+    from ..ops.misc import Conv2dNormActivation, Permute
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/ops/__init__.py", line 1, in <module>
+    from ._register_onnx_ops import _register_custom_op
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torchvision/ops/_register_onnx_ops.py", line 5, in <module>
+    from torch.onnx import symbolic_opset11 as opset11
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/onnx/__init__.py", line 46, in <module>
+    from ._internal.exporter import (  # usort:skip. needs to be last to avoid circular import
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/onnx/_internal/exporter.py", line 42, in <module>
+    from torch.onnx._internal.fx import (
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/onnx/_internal/fx/__init__.py", line 1, in <module>
+    from .patcher import ONNXTorchPatcher
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/onnx/_internal/fx/patcher.py", line 11, in <module>
+    import transformers  # type: ignore[import]
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/transformers/__init__.py", line 3841, in <module>
+    from .utils import dummy_tf_objects
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/transformers/utils/dummy_tf_objects.py", line 89, in <module>
+    class TFRepetitionPenaltyLogitsProcessor(metaclass=DummyObject):
+KeyboardInterrupt

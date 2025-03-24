@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "train.py", line 13, in <module>
+    import torch
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/__init__.py", line 1504, in <module>
+    from . import masked
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/masked/__init__.py", line 3, in <module>
+    from ._ops import (
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/masked/_ops.py", line 11, in <module>
+    from torch._prims_common import corresponding_real_dtype
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/torch/_prims_common/__init__.py", line 23, in <module>
+    import sympy
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/sympy/__init__.py", line 30, in <module>
+    from sympy.core.cache import lazy_function
+  File "/home/ubuntu/miniconda3/envs/2dgs/lib/python3.8/site-packages/sympy/core/__init__.py", line 9, in <module>
+    from .expr import Expr, AtomicExpr, UnevaluatedExpr
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 971, in get_code
+  File "<frozen importlib._bootstrap_external>", line 640, in _compile_bytecode
+KeyboardInterrupt
