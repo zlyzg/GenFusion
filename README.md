@@ -42,7 +42,7 @@ If your skip the generation model training, you can download our pre-trained mod
 
 ### Masked 3D Reconstruction
 
-Step 1. The testing scenes in our paper is selected from DL3DV Benchmarkand DL3DV dataset. Download scenes from [Huggingface](https://huggingface.co/datasets/DL3DV/) and put the scenes from `DL3DV_test_list.txt` in the `./data` folder.
+Step 1. The testing scenes in our paper is selected from DL3DV Benchmarkand DL3DV dataset. Download scenes from [Huggingface](https://huggingface.co/datasets/Inception3D/GenFusion_DL3DV_24Benchmark) and put them in the `./data` folder.
 
 Step 2. To get the quantitative results in our paper, you can run the following command.
 
