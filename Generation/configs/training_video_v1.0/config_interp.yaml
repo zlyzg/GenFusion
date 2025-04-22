@@ -115,11 +115,11 @@ model:
 data:
   target: utils_data.DataModuleFromConfig
   params:
-    batch_size: 4
+    batch_size: 2
     num_workers: 8
     wrap: false
     train:
-      target: lvdm.data.dl3dv_video.ImageSequenceDataset
+      target: lvdm.data.dl3dv_chunk.ImageSequenceDataset
       params:
         data_dir: <DL3DV Rendering DATA>
 

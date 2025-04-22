@@ -131,6 +131,7 @@ def creat_gaussians_from_pcd(scene, points, colors):
         new_opacity,
         new_scaling,
         new_rotation,
+        selected_pts_mask=None
     )
     print(
         "Point addition finished. Now we have ",

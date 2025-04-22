@@ -1,6 +1,6 @@
 # GenFusion: Closing the Loop between Reconstruction and Generation via Videos
 
-[Project page](https://genfusion.sibowu.com) | [Paper](https://arxiv.org/abs/2503.21219) | [Data (Incoming)](hhttps://genfusion.sibowu.com) <br>
+[Project page](https://genfusion.sibowu.com) | [Paper](https://arxiv.org/abs/2503.21219) | [Data](https://huggingface.co/datasets/Inception3D/GenFusion_Training_Data) <br>
 
 ![Teaser image](assets/pipeline.png)
 
