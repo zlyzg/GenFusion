@@ -205,9 +205,24 @@ python train.py \
     --start_dist_iter 3000
 ```
 
+## Citation
+
+If you find this work useful in your research, please consider citing:
+
+```bibtex
+@inproceedings{Wu2025GenFusion,
+    author = {Sibo Wu and Congrong Xu and Binbin Huang and Geiger Andreas and Anpei Chen},
+    title = {GenFusion: Closing the Loop between Reconstruction and Generation via Videos},
+    booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year = {2025}
+}
+```
+
+
 ## Acknowledgements
 
 This project is built upon [2DGS](https://github.com/hbb1/2d-gaussian-splatting) and [DynamiCrafter](https://github.com/Doubiiu/DynamiCrafter). The dataset processing is based on [gsplat](https://github.com/nerfstudio-project/gsplat/tree/main/gsplat). We thank all the authors for their great repos. 
 
 
 Special thanks to [LiangrunDa](https://github.com/LiangrunDa) for his help on the project website and part of the code. 
+
